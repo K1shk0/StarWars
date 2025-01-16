@@ -1,0 +1,67 @@
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Universet</title>
+    <img src="Assets/Img/Star-wars-logo-new-tall.webp" alt="">
+    <link rel="stylesheet" href="Assets/Css/styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="#characters">Karakterer</a></li>
+        <li><a href="#planets">Planeter</a></li>
+        <li><a href="#films">Film</a></li>
+    </ul>
+</nav>
+
+<section class="banner">
+    <div class="banner-text">
+        <h1>Velkommen til Star Wars Universet</h1>
+        <h4>Udforsk galaksens karakterer, planeter og episke film.</h4>
+    </div>
+</section>
+
+<section id="characters" class="characters-section">
+    <h2>Star Wars Karakterer</h2>
+    <input type="text" id="searchInput" placeholder="Søg efter en karakter...">
+    <div id="character-list"></div>
+    <div id="pagination">
+        <button onclick="changePage(-1)">Forrige</button>
+        <button onclick="changePage(1)">Næste</button>
+    </div>
+</section>
+
+<section id="planets" class="characters-section">
+    <h2>Star Wars Planeter</h2>
+    <select id="climateFilter">
+        <option value="">Filtrer efter klima</option>
+    </select>
+    <div id="planet-list"></div>
+    <div id="planet-pagination">
+        <button onclick="changePlanetPage(-1)">Forrige</button>
+        <button onclick="changePlanetPage(1)">Næste</button>
+    </div>
+</section>
+
+<section id="films" class="films-section">
+    <h2>Star Wars Film</h2>
+    <div id="film-list"></div>
+</section>
+
+<div id="film-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h3 id="modal-title"></h3>
+        <p id="modal-crawl"></p>
+    </div>
+</div>
+
+<section class="introduction">
+    <footer>All rights Reserved &copy;opyright year 2025 - Lavet af mig</footer>
+</section>
+
+<script src="Assets/Js/scripts.js"></script>
+</body>
+</html>
